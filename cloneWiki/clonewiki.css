@@ -1,0 +1,58 @@
+header{
+    position: absolute;
+    background-color: lightblue;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    color: blue;
+    font-size: small;
+}
+header ul li{
+    width: auto;
+    height: 100%;
+    float: right;
+    margin: 5px 10px;
+   
+    list-style: none;
+
+}
+
+aside{
+    
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: auto;
+    font: small;
+    color: blue;
+    
+}
+body aside div{
+    width: 100%;
+    height: auto;
+    border: 1px solid cadetblue;
+    font: small;
+  
+}
+body aside div h3{
+    color: black;
+    text-align: left;
+}
+body aside div li{
+    list-style: none;
+}
+#headerNav{
+    
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    left: 400px;
+    z-index: 2;
+}
+#headerNav ul li{
+    background-color: blue;
+    float: left;
+    list-style: none;
+    
+}
+

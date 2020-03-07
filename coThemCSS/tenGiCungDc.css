@@ -1,0 +1,22 @@
+body{
+    color: navy;
+    font-size: 30px;
+    background-color: yellow;
+}
+h2{
+    color:red
+}
+ul.a{
+    list-style-position: initial;
+}0
+ul.b{
+    list-style-position: unset;
+    color: red ;
+    vertical-align: middle;
+}
+li{
+    background-color: blue;
+}
+h1{
+    color: red;
+}
