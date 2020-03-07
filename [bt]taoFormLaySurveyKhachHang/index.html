@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Market research survey</title>
+    <link rel="stylesheet" href="taoFormLaySurveyKhachHang.css">
 </head>
 <body>
     <form action="">
@@ -16,9 +17,100 @@
             <tbody>
                 <tr>
                     <h3>What is your age range</h3>
-                    <select name="age" id="age"></select>
+                    <select class="longSelect" name="age" id="age">
+                        <option value="18-24" >18-24</option>
+                        <option value="25 -34">25-34</option>
+                        <option value="35-50" >35-50</option>
+                        <option value="50+" >50+</option>
+                    </select>
+                </tr>
+                <tr>
+                    <h3>What is your yearly income range?</h3>
+                    <select class="longSelect" name="yearlyIncome" id="yearlyInCome">
+                        <option value="$0 - $25000">$0 - $25000</option>
+                        <option value="$25001 - $50000">$25001 - $50000</option>
+                        
+                        <option value="$50001 - $100000">$50001 - $100000</option>
+                        <option value="$100000+">$100000+</option>
+                    </select>
+                </tr>
+                <tr>
+                    <h3>Gender Indentity</h3>
+                    <input type="radio" name="Gender" value="Male">
+                    <label for="Male"> Male</label> <br>
+                    <input type="radio" name="Gender" value="Female">
+                    <label for="Female"> Female</label> <br>
+                    <input type="radio" name="Gender" value="Nonbinary">
+                    <label for="Nonbinary"> Nonbinary</label> <br>
+                    <input type="radio" name="Gender" value="Other">
+                    <label for="Other"> Other</label> <br>
+                    <input type="text" id="otherGender" max="250">
+                </tr>
+                <tr>
+                    <h3>Which of the folowing products have your purchased in the last 2 months. Please check all that apply</h3>
+                    <input type="checkbox" id="product1" name="Product1" value="Product1">
+                    <label for="Product1">Product1</label> <br>
+                    <input type="checkbox" id="product2" name="Product2" value="Product2">
+                    <label for="Product2">Product2</label> <br>
+                    <input type="checkbox" id="product3" name="Product3" value="Product3">
+                    <label for="Product3">Product3</label><br>
+                </tr>
+                <tr>
+                    <h3>How often would you use our new product?</h3>
+                    <input type="radio" name="timeToUse" value="Daily">
+                    <label for="Daily">Daily</label> <br>
+                    <input type="radio" name="timeToUse" value="Weekly">
+                    <label for="Daily">Weekly</label> <br>
+                    <input type="radio" name="timeToUse" value="Monthly">
+                    <label for="Daily">Monthly</label> <br>
+                </tr>
+                <tr>
+                    <h3>What would you pay for the new product?</h3>
+                    $<input type="text" id="dollarPays">. <input type="text" id="centPays">
+                </tr>
+                <tr>
+                    <h3>What features would you like to see in the new product.</h3>
+                    <textarea  id="features" cols="100" rows="10"></textarea>
+                </tr>
+                <tr>
+                    <h4>Please rate your level of agreement with the following statements.</h4>
+                    <table>
+                        <tr>
+                            <th></th>
+                            <th>Strongly disagree</th>
+                            <th>Disagree</th>
+                            <th>Agree</th>
+                            <th>Strongly Agree</th>
+                        </tr>
+                        <tr>
+                            <th>Our Products are priced fairy</th>
+                            <td><input type="radio" name="price" value="1">1
+                            </td>
+                            <td><input type="radio" name="price" value="2">2
+                            </td>
+                            <td><input type="radio" name="price" value="3">3
+                            </td>
+                            <td><input type="radio" name="price" value="4">4
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Our products are high quality</th>
+                            <td><input type="radio" name="quality" value="1">1</td>
+                            <td><input type="radio" name="quality" value="2">2</td>
+                            <td><input type="radio" name="quality" value="3">3</td>
+                            <td><input type="radio" name="quality" value="4">4</td>
+                        </tr>
+                        <tr>
+                            <th>You would recommend our product to a friend or coworker.</th>
+                            <td><input type="radio" name="recommend" value="1">1</td>
+                            <td><input type="radio" name="recommend" value="2">2</td>
+                            <td><input type="radio" name="recommend" value="3">3</td>
+                            <td><input type="radio" name="recommend" value="4">4</td>
+                        </tr>
+                    </table>
                 </tr>
             </tbody>
+            <button type="submit">Submit</button>
         </table>
     </form>
 </body>

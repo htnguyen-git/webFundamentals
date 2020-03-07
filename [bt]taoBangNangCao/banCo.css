@@ -1,0 +1,21 @@
+table{
+    width: 50%;
+    height: 100vh;
+    border-collapse: collapse;
+    
+}
+ td{
+    border: 1px black solid;
+    border-collapse: collapse;
+    width: 70px;
+    height: 70px;
+}
+.den{
+    background-color: black;
+}
+.trang{
+    background-color: white;
+}
+*{
+    background-color: orange;
+}
